@@ -2,11 +2,9 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`
 })
 
-const siteUrl = process.env.URL
-
 module.exports = {
   siteMetadata: {
-    siteUrl: siteUrl,
+    siteUrl: 'gracjanopiela.pl',
     title: `Gracjan Opiela portfolio`,
     description: `My new portfolio created with gatsby.`,
     seo: {
