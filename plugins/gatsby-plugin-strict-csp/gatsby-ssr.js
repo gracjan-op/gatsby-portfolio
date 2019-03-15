@@ -31,7 +31,7 @@ exports.onPreRenderHTML = (
     }
   })
 
-  let CSP = `base-uri 'none'; default-src 'none'; script-src https://www.google-analytics.com 'self'${scriptHashes}; style-src 'self' 'unsafe-inline'; object-src 'none'; form-action 'self'; font-src self data:; connect-src 'self'; img-src 'self' https://www.google-analytics.com data:; frame-ancestors 'none'`
+  let CSP = `base-uri 'none'; default-src 'none'; script-src https://www.google-analytics.com 'self'${scriptHashes}; style-src 'self' 'unsafe-inline'; object-src 'none'; form-action 'self'; font-src self data:; connect-src 'self'; img-src 'self' https://www.google-analytics.com data:; frame-ancestors 'none'; manifest-src 'self'; prefetch-src 'self';`
 
   const CSPcomponent = React.createElement('meta', {
     httpEquiv: 'Content-Security-Policy',
